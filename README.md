@@ -1,5 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Primary Title
 ## Title
-### `sub title`
-### sub title too
+### secondary title
+### `sub title too`
