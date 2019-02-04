@@ -1,0 +1,10 @@
+.Footer-sticky {
+    min-height: calc(100vh - 200px);
+}
+
+.Footer {
+    background-color: #282c34;
+    height: 100px;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
