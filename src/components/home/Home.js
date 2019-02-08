@@ -54,6 +54,7 @@ const styles = theme => ({
   iconSocial: {
     padding: '10px',
     borderRadius:  '5px',
+    fontSize: '44px',
     '&:hover': {
         color: '#61dafb',
         backgroundColor: 'white'
@@ -68,22 +69,16 @@ const styles = theme => ({
   },
   img: {
     border: '20px solid rgba(0,0,0,0.4)',
-    height: '360px',
-    width: '360px',
     margin: '0 auto',
     float: 'none',
     textAlign: 'center',
     borderRadius: '50%',
     maxWidth: '100%',
-    'height': 'auto'
+    height: 'auto'
   }
 });
 
 class Home extends Component {
-    constructor (props) {
-        super(props);
-    }
-
     render () {
         const { classes } = this.props;
 
