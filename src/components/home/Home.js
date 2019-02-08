@@ -60,18 +60,22 @@ const styles = theme => ({
     }
   },
   imgParent: {
-    width: '400px',
+    border: '20px solid rgba(0,0,0,0.9)',
     height: '400px',
+    width: '400px',
     margin: '0 auto',
-    borderRadius: '50%',
-    border: '20px solid rgba(0,0,0,0.9)'
+    borderRadius: '50%'
   },
   img: {
+    border: '20px solid rgba(0,0,0,0.4)',
+    height: '360px',
+    width: '360px',
     margin: '0 auto',
     float: 'none',
     textAlign: 'center',
     borderRadius: '50%',
-    border: '20px solid rgba(0,0,0,0.4)'
+    maxWidth: '100%',
+    'height': 'auto'
   }
 });
 
