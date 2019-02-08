@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 import './App.css';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-
-import Todo from './components/todo/Todo';
+import Home from './components/home/Home';
 
 class App extends Component {
   render() {
     return (
-        <div>
+        <React.Fragment>
+
             <Header />
 
-            <Todo />
+            <Home />
 
             <Footer />
-        </div>
+        </React.Fragment>
     );
   }
 }

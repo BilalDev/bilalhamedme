@@ -9,11 +9,8 @@ import './Footer.css';
 class Footer extends Component {
     render () {
         return (
-            <div>
-                <div className="Footer-sticky"></div>
-                <footer className="Footer">
-                </footer>
-            </div>
+            <footer className="Footer">
+            </footer>
         );
     }
 }
