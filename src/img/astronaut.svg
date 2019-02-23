@@ -1,0 +1,18 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+    <rect x="30" y="0" fill="#CC583F" width="10" height="250"></rect>
+    <rect x="40" y="0" fill="#ECB447" width="10" height="250"></rect>
+    <rect x="50" y="0" fill="#75C095" width="10" height="250"></rect>
+    <rect x="60" y="0" fill="#5991AA" width="10" height="250"></rect>
+    <rect x="70" y="0" fill="#7D6AAD" width="10" height="250"></rect>
+
+    <g className="bubbles">
+        <circle cx="86" cy="254" fill="#ECB447" r="15"></circle>
+        <circle cx="70" cy="273" fill="#7D6AAD" r="7"></circle>
+        <circle cx="44" cy="260" fill="#ECB447" r="25"></circle>
+        <circle cx="20" cy="251" fill="#7D6AAD" r="20"></circle>
+        <circle cx="48" cy="258" fill="#CC583F" r="12"></circle>
+        <circle cx="30" cy="250" fill="#5991AA" r="15"></circle>
+        <circle cx="75" cy="260" fill="#5991AA" r="8"></circle>
+        <circle cx="62" cy="250" fill="#75C095" r="18"></circle>
+    </g>
+</svg>

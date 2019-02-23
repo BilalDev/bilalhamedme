@@ -7,28 +7,50 @@ import { AlternateEmail, Phone, LocationOn, BlurCircular } from '@material-ui/ic
 import imgBilal from '../../img/bilaldev.jpg';
 import Label from '../ui/Label';
 import Svg from '../ui/Svg';
+import './Home.css';
 
 const styles = theme => ({
   layout: {
     width: 'auto',
     marginLeft: theme.spacing.unit * 3,
     marginRight: theme.spacing.unit * 3,
+    marginBottom: theme.spacing.unit * 40,
     [theme.breakpoints.up(1100 + theme.spacing.unit * 3 * 2)]: {
       width: 1100,
       marginLeft: 'auto',
-      marginRight: 'auto',
+      marginRight: 'auto'
     },
+    [theme.breakpoints.down('sm')]: {
+        marginBottom: theme.spacing.unit * 10
+    }
   },
   mainGrid: {
-    margin: 0
+    margin: 0,
+    [theme.breakpoints.down('sm')]: {
+        flexDirection: 'column-reverse'
+    },
+    '& > div': {
+        [theme.breakpoints.down('sm')]: {
+            margin: '30px 0',
+            textAlign: 'center',
+        }
+    }
   },
   h2: {
     color: 'white',
-    margin: '10px 0'
+    margin: '10px 0',
+    [theme.breakpoints.down('sm')]: {
+        fontSize: '42px',
+        lineHeight: '54px'
+    }
   },
   h4: {
     color: 'white',
-    marginBottom: '30px'
+    marginBottom: '30px',
+    [theme.breakpoints.down('sm')]: {
+        fontSize: '20px',
+        lineHeight: '24px'
+    }
   },
   iconParent: {
     fontSize: '14px',
@@ -65,7 +87,11 @@ const styles = theme => ({
     height: '400px',
     width: '400px',
     margin: '0 auto',
-    borderRadius: '50%'
+    borderRadius: '50%',
+    [theme.breakpoints.down('sm')]: {
+        height: '280px',
+        width: '280px'
+    }
   },
   img: {
     border: '20px solid rgba(0,0,0,0.4)',
@@ -79,6 +105,11 @@ const styles = theme => ({
 });
 
 class Home extends Component {
+
+    constructor (props) {
+        super(props);
+    }
+
     render () {
         const { classes } = this.props;
 
@@ -86,7 +117,7 @@ class Home extends Component {
             <div className={classes.layout}>
                 <main>
                     <Grid container className={ classes.mainGrid }>
-                        <Grid xs={12} md={6}>
+                        <Grid xs={12} sm={12} md={6}>
                             <Label />
                             <Typography className={ classes.h2 } variant="h2">Bilal Hamed Abdallah</Typography>
                             <Typography className={ classes.h4 } variant="h4">Développeur - Freelance</Typography>
@@ -123,7 +154,7 @@ class Home extends Component {
                                 </li>
                             </ul>
                         </Grid>
-                        <Grid xs={12} md={6}>
+                        <Grid xs={12} sm={12} md={6}>
                             <div className={ classes.imgParent }>
                                 <img className={ classes.img } src={imgBilal} alt="bilaldev.jpg" />
                             </div>
@@ -136,7 +167,7 @@ class Home extends Component {
 }
 
 Home.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(Home);
