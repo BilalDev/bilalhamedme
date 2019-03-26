@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { Grid, withStyles, Typography } from "@material-ui/core";
+import { withStyles } from "@material-ui/core";
 import SkillItem from './SkillItem';
 
 const styles = theme => ({
@@ -24,18 +24,13 @@ const styles = theme => ({
 });
 
 class Skill extends Component {
-
-    constructor (props) {
-        super(props);
-    }
-
-    render () {
+    render() {
         const { classes } = this.props;
-        const skillsItem = this.props.skills.map(skill => <SkillItem className={ classes.li } key={skill.id} item={skill} />);
+        const skillsItem = this.props.skills.map(skill => <SkillItem className={classes.li} key={skill.id} item={skill} />);
 
         return (
-            <ul className={ classes.ul }>
-                { skillsItem }
+            <ul className={classes.ul}>
+                {skillsItem}
             </ul>
         );
     }

@@ -4,7 +4,7 @@ import Logo from '../logo/Logo';
 import './Header.css';
 
 class Header extends Component {
-    render () {
+    render() {
         return (
             <header className="Header">
                 <Logo />
