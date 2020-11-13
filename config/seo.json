@@ -1,0 +1,16 @@
+{
+  "title": "Bilal Hamed Abdallah",
+  "titleTemplate": "%s - BHA",
+  "description": "Hi! I'm Bilal Hamed Abdallah, a software engineer from all around the world.",
+  "openGraph": {
+    "type": "website",
+    "locale": "fr_FR",
+    "url": "https://www.bilalhamed.me/",
+    "site_name": "Bilal Hamed Abdallah"
+  },
+  "twitter": {
+    "handle": "@sogekiin",
+    "site": "@sogekiin",
+    "cardType": "summary_large_image"
+  }
+}
