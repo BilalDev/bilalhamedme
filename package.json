@@ -7,10 +7,12 @@
   "license": "MIT",
   "scripts": {
     "build": "ENV=production next build",
-    "preexport": "yarn build",
+    "clean": "rm -rf ./out",
+    "preexport": "yarn clean && yarn build",
     "export": "next export",
     "dev": "next dev",
     "start": "next start",
+    "predeploy": "yarn export",
     "deploy": "aws s3 cp --recursive ./out s3://bilalhamed-me"
   },
   "dependencies": {
