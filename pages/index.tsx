@@ -53,7 +53,7 @@ export default function Home(): JSX.Element {
           or{" "}
           <a
             className="border-b border-gray-900 text-gray-700 hover:text-black"
-            href="https://www.linkedin.com/in/aslidev/"
+            href="https://www.linkedin.com/in/bilaldev/"
           >
             Linkedin
           </a>
