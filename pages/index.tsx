@@ -1,22 +1,11 @@
-import { Layout } from "@components/common";
+import { Header, Layout } from "@components/common";
 import s from "./index.module.css";
 
 export default function Home(): JSX.Element {
   return (
     <div className="container flex flex-col min-h-screen px-4 pt-10 mx-auto">
       <main className="flex-grow">
-        <div className="overflow-hidden">
-          <img
-            className="mx-auto rounded-full"
-            width={72}
-            height={72}
-            src="https://bilalhamed-me.s3.eu-west-3.amazonaws.com/me.jpeg"
-            alt={"selfie"}
-          />
-        </div>
-
-        <h1 className="text-4xl font-bold text-center">Bilal Hamed Abdallah</h1>
-        <h3 className="text-center">DEVELOPMENT</h3>
+        <Header />
 
         <h2 className="my-4 text-2xl font-bold">About</h2>
         <p className="mb-1">
