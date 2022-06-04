@@ -10,7 +10,7 @@ const Header: FC = () => {
             className="mx-auto rounded-full"
             width={72}
             height={72}
-            src="https://bilalhamed-me.s3.eu-west-3.amazonaws.com/me.jpeg"
+            src="/me.jpeg"
             alt={"selfie"}
           />
         </Link>
