@@ -3,11 +3,11 @@ import s from "./index.module.css";
 
 export default function Home(): JSX.Element {
   return (
-    <div className="container mx-auto px-4 pt-10 flex flex-col min-h-screen">
+    <div className="container flex flex-col min-h-screen px-4 pt-10 mx-auto">
       <main className="flex-grow">
         <div className="overflow-hidden">
           <img
-            className="rounded-full mx-auto"
+            className="mx-auto rounded-full"
             width={72}
             height={72}
             src="https://bilalhamed-me.s3.eu-west-3.amazonaws.com/me.jpeg"
@@ -18,41 +18,49 @@ export default function Home(): JSX.Element {
         <h1 className="text-4xl font-bold text-center">Bilal Hamed Abdallah</h1>
         <h3 className="text-center">DEVELOPMENT</h3>
 
-        <h2 className="font-bold text-2xl my-4">About</h2>
+        <h2 className="my-4 text-2xl font-bold">About</h2>
         <p className="mb-1">
           Hi! I'm Bilal Hamed Abdallah, a software engineer from all around the
           world.
         </p>
         <p>
-          I'm passionate by web development. And currently working on{" "}
+          I'm passionate by web and game development. And currently working
+          on&nbsp;
           <a
-            className="border-b border-gray-900 text-gray-700 hover:text-black"
+            className="text-gray-700 border-b border-gray-900 hover:text-black"
             href="https://www.mongodb.com/mern-stack"
           >
             MERN
-          </a>{" "}
-          stack and{" "}
+          </a>
+          &nbsp; stack,&nbsp;
           <a
-            className="border-b border-gray-900 text-gray-700 hover:text-black"
+            className="text-gray-700 border-b border-gray-900 hover:text-black"
             href="https://www.salesforce.com/fr/products/commerce-cloud/overview/"
           >
             Salesforce Commerce Cloud
           </a>
+          &nbsp;and&nbsp;
+          <a
+            className="text-gray-700 border-b border-gray-900 hover:text-black"
+            href="https://unity.com/"
+          >
+            unity
+          </a>
           .
         </p>
 
-        <h2 className="font-bold text-2xl my-4">Contact</h2>
+        <h2 className="my-4 text-2xl font-bold">Contact</h2>
         <p>
-          Want to reach out? Contact me by{" "}
+          Want to reach out? Contact me by&nbsp;
           <a
-            className="border-b border-gray-900 text-gray-700 hover:text-black"
+            className="text-gray-700 border-b border-gray-900 hover:text-black"
             href="mailto:hello@bilalhamed.me"
           >
             Email
-          </a>{" "}
-          or{" "}
+          </a>
+          &nbsp; or&nbsp;
           <a
-            className="border-b border-gray-900 text-gray-700 hover:text-black"
+            className="text-gray-700 border-b border-gray-900 hover:text-black"
             href="https://www.linkedin.com/in/bilaldev/"
           >
             Linkedin
@@ -64,14 +72,12 @@ export default function Home(): JSX.Element {
       <footer>
         <div className="flex items-center">
           <a
-            className="border-b border-gray-900 text-gray-700 hover:text-black"
+            className="text-gray-700 border-b border-gray-900 hover:text-black"
             href="https://github.com/BilalDev/bilalhamedme.git"
           >
             page repository
           </a>
-          <a
-            href="https://github.com/BilalDev/bilalhamedme.git"
-          >
+          <a href="https://github.com/BilalDev/bilalhamedme.git">
             <img className="ml-2" src="/github.svg" alt="github" />
           </a>
         </div>
