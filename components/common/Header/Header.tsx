@@ -1,17 +1,19 @@
 import React, { FC } from "react";
-import cn from "classnames";
+import Link from "next/link";
 
 const Header: FC = () => {
   return (
     <div>
-      <div className="overflow-hidden">
-        <img
-          className="mx-auto rounded-full"
-          width={72}
-          height={72}
-          src="https://bilalhamed-me.s3.eu-west-3.amazonaws.com/me.jpeg"
-          alt={"selfie"}
-        />
+      <div className="overflow-hidden cursor-pointer">
+        <Link href="/" passHref>
+          <img
+            className="mx-auto rounded-full"
+            width={72}
+            height={72}
+            src="https://bilalhamed-me.s3.eu-west-3.amazonaws.com/me.jpeg"
+            alt={"selfie"}
+          />
+        </Link>
       </div>
 
       <h1 className="text-4xl font-bold text-center">Bilal Hamed Abdallah</h1>
